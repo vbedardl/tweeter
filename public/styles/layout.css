@@ -18,8 +18,32 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-display: swap;
+}
+main{
+  width:90%;
+  margin:0 auto;
+  background-color: #f4f1ec;
 }
 
+#goUp{
+  display: none;
+  position:fixed;
+  margin:2em;
+  width:2em;
+  bottom:0;
+  right:0;
+  padding:10px;
+  border-radius:50px;
+  background-color: #4056A1;
+  color: #FFFFFF;
+}
+#goUp:hover{
+  background-color: #92a3dd;
+  cursor:pointer;
+
+}
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
