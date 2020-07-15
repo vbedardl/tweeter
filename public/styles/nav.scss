@@ -1,0 +1,23 @@
+@use 'partial';
+
+nav{
+  height:120px;
+  background-color: partial.$primary-color;
+  color:partial.$light-font-color;
+  padding:1.5em;
+  position: fixed;
+  top:0;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+
+  :first-child{
+    font-family: partial.$secondary-font;
+    font-display: swap;
+  }
+
+  :nth-child(2):hover{
+    cursor:pointer;
+    color: partial.$secondary-color;
+  }
+}

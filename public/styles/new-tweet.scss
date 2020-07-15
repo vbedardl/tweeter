@@ -1,0 +1,33 @@
+@use 'partial';
+
+.new-tweet{
+  margin:0 auto;
+
+  form{
+    display:flex;
+    flex-direction:column;
+  }
+
+  textarea{
+    font-weight: 700;
+    background: transparent;
+    outline:none;
+    border:none;
+    border-bottom: 3px solid black;
+    padding: 1px;
+    height:1.5em;
+  }
+
+  div{
+    display: flex;
+    justify-content: space-between;
+    font-family: partial.$secondary-font;
+    font-display: swap;
+    margin:1em 0;
+  }
+
+  button{
+    background-color: partial.$primary-color;
+    color:partial.$light-font-color;
+  }
+}

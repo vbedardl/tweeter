@@ -3,10 +3,11 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+@use 'partial';
+
 html {
   box-sizing: border-box;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -14,39 +15,37 @@ html {
 /*
  * Global layout stuff
  */
+
 body {
-  color: #545149;
+  color: partial.$dark-font-color;
   background-color: #f4f1ec;
   font-size: 24px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: partial.$primary-font;
   font-display: swap;
 }
-
-main {
-  width: 90%;
-  margin: 0 auto;
+main{
+  width:90%;
+  margin:0 auto;
   background-color: #f4f1ec;
 }
 
 @media only screen and (min-width: 1024px) {
-  #core {
+  #core{
     display: flex;
     justify-content: center;
-    margin-top: 125px;
+    margin-top:125px;
+  }
+   
+  header{    
+    width:90%;
+    margin:5%;
   }
 
-  header {
-    width: 90%;
-    margin: 5%;
-  }
-
-  main {
-    width: 90%;
-    margin: 5%;
+  main{
+    width:90%;
+    margin:5%;
   }
 }
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-
-/*# sourceMappingURL=layout.css.map */

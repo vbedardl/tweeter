@@ -1,0 +1,57 @@
+@use 'partial';
+
+#tweet-container article{
+  display:flex;
+  padding:0.5em 1em;
+  flex-direction:column;
+  border:3px solid black;
+  opacity: 0.7;
+  margin-bottom: 3em;
+
+  &:hover{
+    opacity: 1;
+    box-shadow: 6px 6px partial.$secondary-color;
+  }
+  
+  .header{
+    display:flex;
+    justify-content: space-between;
+    height:2.5em;
+    margin:0.5em 0;
+
+    div{
+      display: flex;
+      align-items: center;
+    }
+
+    h6{
+      margin:1.5em 1em;
+    }
+    .username{
+      color: partial.$secondary-color;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .main{
+    height:3em;
+  }
+
+  .footer{
+    border-top:3px solid black;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+    height:1.5em;
+  }
+
+  i{
+    color: partial.$primary-color;
+  
+    &:hover{
+      color: partial.$secondary-color;
+    }
+  }
+}

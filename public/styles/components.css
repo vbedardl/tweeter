@@ -1,0 +1,27 @@
+#goUp {
+  display: none;
+  position: fixed;
+  margin: 2em;
+  width: 2em;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #4056A1;
+  color: #ffffff;
+}
+#goUp:hover {
+  background-color: #b2b5ca;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+#error-message {
+  color: #D8000C;
+  background-color: #FFD2D2;
+}
+
+/*# sourceMappingURL=components.css.map */

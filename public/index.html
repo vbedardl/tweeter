@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     <link rel="stylesheet" href="/styles/tweet-container.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/components.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -30,41 +31,43 @@
       <div>tweeter</div>
       <div id="write-tweet">Write a new tweet</div>
     </nav>
-    <header>
-      <div>
-          <img src="/images/profile-hex.png"> 
-      </div>
-      <br>
-      <div>
-          <h2>Your Name</h2>
-      </div>
-  </header>
+    <div id="core">
+      <header>
+        <div>
+            <img src="/images/profile-hex.png"> 
+        </div>
+        <br>
+        <div>
+            <h2>Vincent Bedard</h2>
+        </div>
+    </header>
 
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <h2>LOREM IPSUM</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <!-- Page-specific (main) content here -->
+      <main class="container">
+        <h2>LOREM IPSUM</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 
-      <section class="new-tweet">
-        <h2>Compose Tweet</h2>
-        <div id="error-message" class="hidden"></div>
-        <form method="POST" action="/tweets">
-          <textarea name="text" placeholder="What are you humming about?" id="tweet-text"></textarea>
-          <div>
-            <button id="twitting" type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>
+        <section class="new-tweet hidden">
+          <h2>Compose Tweet</h2>
+          <div id="error-message" class="hidden"></div>
+          <form method="POST" action="/tweets">
+            <textarea name="text" placeholder="What are you humming about?" id="tweet-text"></textarea>
+            <div>
+              <button id="twitting" type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </div>
+          </form>
+        </section>
 
-      <section id="tweet-container">
-        
+        <section id="tweet-container">
+          
 
-        
+          
 
-      </section>
-      <button id="goUp"><i class="fa fa-angle-double-up" aria-hidden="true"></i>
-      </button>
-    </main>
+        </section>
+        <button id="goUp"><i class="fa fa-angle-double-up" aria-hidden="true"></i>
+        </button>
+      </main>
+    </div>
   </body> 
 </html>

@@ -1,0 +1,28 @@
+@use 'partial';
+
+#goUp{
+  display: none;
+  position:fixed;
+  margin:2em;
+  width:2em;
+  bottom:0;
+  right:0;
+  padding:10px;
+  border-radius:50px;
+  background-color: partial.$primary-color;
+  color: partial.$light-font-color;
+
+  &:hover{
+    background-color: partial.$secondary-color;
+    cursor:pointer;
+  }
+}
+
+.hidden {
+  display:none;
+}
+
+#error-message{
+  color: #D8000C;
+  background-color: #FFD2D2;
+}
