@@ -40,8 +40,8 @@ $(function() {
       $.ajax(url, { method: 'POST', data: formData })
         .done(function(data) {
           $('#tweet-text').val('');
+          showTweetForm()
           loadTweets();
-          console.log('Success: ', data);
         });
     }
   });

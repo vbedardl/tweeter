@@ -15,3 +15,19 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+- BodyParser
+- change
+- md5
+
+## Functionnalities
+
+- Create tweets and post them on the feed
+- The app is responsive for mobile and desktop
+
+## Version 2.0
+
+A second version is in process going for a more minimalist design. The focus is on the backend.
+- Registration and login/logout functionnalities
+- Creation of tweets linked to your own username
+- Feed live with the tweets from all users
+- Search bar allowing to search through the tweets by key word
