@@ -1,7 +1,7 @@
 @use 'partial';
 
 nav{
-  height:120px;
+  height:80px;
   background-color: partial.$primary-color;
   color:partial.$light-font-color;
   padding:1.5em;
@@ -10,13 +10,14 @@ nav{
   width:100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
-  :first-child{
+  .nav-left{
     font-family: partial.$secondary-font;
     font-display: swap;
   }
 
-  :nth-child(2):hover{
+  .nav-right:hover{
     cursor:pointer;
     color: partial.$secondary-color;
   }

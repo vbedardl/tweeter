@@ -1,5 +1,8 @@
 @use 'partial';
 
+#tweet-container{
+  margin:1em 0;
+}
 #tweet-container article{
   display:flex;
   padding:0.5em 1em;
@@ -13,7 +16,7 @@
     box-shadow: 6px 6px partial.$secondary-color;
   }
   
-  .header{
+  header{
     display:flex;
     justify-content: space-between;
     height:2.5em;
@@ -34,11 +37,11 @@
     }
   }
 
-  .main{
+  main{
     height:3em;
   }
 
-  .footer{
+  footer{
     border-top:3px solid black;
     display:flex;
     flex-direction:row;

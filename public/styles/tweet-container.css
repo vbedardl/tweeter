@@ -1,3 +1,7 @@
+#tweet-container {
+  margin: 1em 0;
+}
+
 #tweet-container article {
   display: flex;
   padding: 0.5em 1em;
@@ -10,28 +14,28 @@
   opacity: 1;
   box-shadow: 6px 6px #b2b5ca;
 }
-#tweet-container article .header {
+#tweet-container article header {
   display: flex;
   justify-content: space-between;
   height: 2.5em;
   margin: 0.5em 0;
 }
-#tweet-container article .header div {
+#tweet-container article header div {
   display: flex;
   align-items: center;
 }
-#tweet-container article .header h6 {
+#tweet-container article header h6 {
   margin: 1.5em 1em;
 }
-#tweet-container article .header .username {
+#tweet-container article header .username {
   color: #b2b5ca;
   display: flex;
   align-items: center;
 }
-#tweet-container article .main {
+#tweet-container article main {
   height: 3em;
 }
-#tweet-container article .footer {
+#tweet-container article footer {
   border-top: 3px solid black;
   display: flex;
   flex-direction: row;

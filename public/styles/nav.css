@@ -1,5 +1,5 @@
 nav {
-  height: 120px;
+  height: 80px;
   background-color: #4056A1;
   color: #ffffff;
   padding: 1.5em;
@@ -8,12 +8,13 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-nav :first-child {
+nav .nav-left {
   font-family: "Bungee", sans-serif;
   font-display: swap;
 }
-nav :nth-child(2):hover {
+nav .nav-right:hover {
   cursor: pointer;
   color: #b2b5ca;
 }
