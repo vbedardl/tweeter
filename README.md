@@ -4,10 +4,11 @@ Tweeter is a simple, single-page Twitter clone.
 
 This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
 
-!["screenshot of the mobile version"](https://github.com/vbedardl/tweeter/blob/master/docs/Desktop-view.png?raw=true)
-!["screenshot of the desktop version"](https://github.com/vbedardl/tweeter/blob/master/docs/Mobile-Going-Over.png?raw=true)
-!["screenshot of the tweeter form capping at 140 characters"](https://github.com/vbedardl/tweeter/blob/master/docs/Mobile-view.png?raw=true)
+!["screenshot of the desktop version"](https://github.com/vbedardl/tweeter/blob/master/docs/Desktop-view.png?raw=true)
 
+!["screenshot of the mobile version"](https://github.com/vbedardl/tweeter/blob/master/docs/Mobile-view.png?raw=true)
+
+!["screenshot of the tweeter form capping at 140 characters"](https://github.com/vbedardl/tweeter/blob/master/docs/Mobile-Going-Over.png?raw=true)
 
 ## Getting Started
 
