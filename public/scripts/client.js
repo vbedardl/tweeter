@@ -12,11 +12,11 @@ $(document).ready(function() {
   )
 
 })
-
 $(function(){
   $('#write-tweet').on('click', function(){
     if($('.new-tweet').is(':hidden')){
       $('.new-tweet').slideDown('slow')
+      $('#tweet-text').focus()
     }else{
       $('.new-tweet').slideUp('slow')
     }
@@ -74,9 +74,14 @@ $(function() {
   });
 });
 
+const changeName = function(name){
+  $('#nameTitle').text(name)
+}
+
 const loadTweets = function(){
   $.ajax('http://localhost:8080/tweets', { method: 'GET' })
   .done(function(data){
+    changeName(data[data.length-1].user.name)
     renderTweets(data)
   })
 }
@@ -96,7 +101,7 @@ const createTweetElement = function(tweet){
         <img height="64px"src="${user.avatars}">
         <h6>${user.name}</h6>
       </div>
-      <h5 class="username hidden">@${user.handle}</h5>
+      <h5 class="username hidden">${user.handle}</h5>
     </div>
     <div class="main">
       <h6>${escape(content.text)}</h6>
