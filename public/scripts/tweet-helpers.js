@@ -27,7 +27,7 @@ export const createTweetElement = function(tweet) {
   return $tweet;
 };
 
-//Rendering the created element in the html file
+// Rendering the created element in the html file
 export const renderTweets = function(tweets) {
   let str = '';
   for (let tweet of tweets) {
@@ -36,6 +36,7 @@ export const renderTweets = function(tweets) {
   }
   $('#tweet-container').html(str);
 };
+
 
 //Showing/Hide the tweet Form
 export const showTweetForm = function(){
@@ -49,7 +50,7 @@ export const showTweetForm = function(){
 
 //Loading tweet function that makes a GET ajax request
 export const loadTweets = function() {
-  $.ajax('http://localhost:8080/tweets', { method: 'GET' })
+  $.ajax('/tweets', { method: 'GET' })
     .done(function(data) {
       changeName(data[data.length - 1].user.name);
       renderTweets(data);

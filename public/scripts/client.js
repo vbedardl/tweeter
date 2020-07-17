@@ -1,8 +1,8 @@
 import { showTweetForm, loadTweets } from "./tweet-helpers.js"
 import { charCounter, scrollFade, goToForm, removeHiddenClass, addHiddenClass } from './helper-functions.js'
 
-$(document).ready(function() {
-  $("textarea#tweet-text").on('keydown', charCounter)
+$(document).ready(function() { 
+  $("textarea#tweet-text").on('keyup', charCounter)
 //Display the button to go up the page once the user has scrolled a little.
   $(window).scroll(scrollFade);
 //On click, bring the user back up with a focus on the "new-tweet" form
@@ -20,23 +20,23 @@ $(function() {
 $(function() {
   $('#twitting').on('click', function(e) {
     e.preventDefault()
-    let form = $('form');
-    let formData = $(form).serialize();
-
-    if (formData.length < 6) {
-      $('#error-message').text('Dude..com on, you need to write something');
+    const form = $('form');
+    const formData = $(form).serialize();
+    const tweetLength = $("textarea#tweet-text").val().length
+    if (!$("textarea#tweet-text").val()) {
+      $('#error-message').text('Please write something to submit your tweet');
       $('#error-message').css('display','block');
       setTimeout(()=>{
         $('#error-message').css('display','none');
       },3000);
-    } else if (formData.length > 140) {
-      $('#error-message').text('That is Waaaaaayy to long. 140 remember?');
+    } else if (tweetLength > 140) {
+      $('#error-message').text('Please do not use more than 140 characters');
       $('#error-message').css('display','block');
       setTimeout(()=>{
         $('#error-message').css('display','none');
       },3000);
     } else {
-      let url = $(form).attr('action');
+      const url = $(form).attr('action');
       $.ajax(url, { method: 'POST', data: formData })
         .done(function(data) {
           $('#tweet-text').val('');

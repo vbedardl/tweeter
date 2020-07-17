@@ -19,15 +19,15 @@ export const chrono = function(number) {
 
 //Protecting app from user inputs
 export const escape = function(str) {
-  let div = document.createElement('div');
+  const div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
 
 //Composer character counter function
 export const charCounter = function(){
-  $('.counter').text(() => 140 - this.value.length);
-  if (this.value.length > 140) {
+  $('.counter').text(() => 140 - (this.value.length));
+  if (this.value.length>140) {
     $('.counter').css('color','red');
   } else {
     $('.counter').css('color','black');
